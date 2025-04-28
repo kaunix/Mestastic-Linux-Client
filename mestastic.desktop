@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Meshtastic Linux Client
+Comment=Mesh Communications Client
+Exec=python3 /opt/meshtastic-linux-client/main.py
+Icon=/opt/meshtastic-linux-client/assets/icons/meshtastic_icon.png
+Terminal=false
+Type=Application
+Categories=Network;Communication;
+

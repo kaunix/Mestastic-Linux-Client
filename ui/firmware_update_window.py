@@ -4,7 +4,9 @@ Firmware Update Window
 Allows users to upload and flash new firmware to Meshtastic devices.
 """
 
+
 from PyQt6 import QtWidgets
+
 
 class FirmwareUpdateWindow(QtWidgets.QWidget):
     """Window for firmware updates."""
@@ -23,4 +25,3 @@ class FirmwareUpdateWindow(QtWidgets.QWidget):
         layout.addWidget(self.choose_file_button)
         layout.addWidget(self.flash_button)
         self.setLayout(layout)
-

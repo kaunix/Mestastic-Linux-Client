@@ -9,18 +9,21 @@ Built for Linux Mint, Ubuntu, Debian — Secure, Off-Grid Communications.
 ## 🚀 Quick Start
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/YOUR_USERNAME/meshtastic-linux-client.git
     cd meshtastic-linux-client
     ```
 
-2. Install dependencies:
+1. Install dependencies:
+
     ```bash
     sudo apt install python3-pip
     pip3 install -r requirements.txt
     ```
 
-3. Run the app:
+1. Run the app:
+
     ```bash
     python3 main.py
     ```
@@ -53,10 +56,10 @@ Built for Linux Mint, Ubuntu, Debian — Secure, Off-Grid Communications.
 
 | Issue | Fix |
 |:---|:---|
-| App won't launch | Make sure all Python dependencies are installed (`pip3 install -r requirements.txt`) |
-| Bluetooth not finding nodes | Ensure your device is advertising over BLE and that Linux Bluetooth services are active |
+| App won't launch | Install deps with `pip3 install -r requirements.txt` |
+| Bluetooth not finding nodes | Enable BLE ads and check the Bluetooth service |
 | Mesh map empty | Check that multiple nodes are powered and linked |
-| Message decryption fails | Verify you have the correct encryption key for that channel |
+| Message decryption fails | Verify the correct key is set for that channel |
 
 ---
 
@@ -72,4 +75,3 @@ Pull Requests welcome!
 Open an Issue to report bugs, suggest features, or just say hi!
 
 ---
-

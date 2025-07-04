@@ -4,9 +4,11 @@ Bluetooth Handler
 Handles Bluetooth scanning and connecting to Meshtastic devices.
 """
 
+
 import asyncio
 import bleak
 import meshtastic.ble_interface
+
 
 class BluetoothHandler:
     """Handles scanning for Bluetooth devices and connecting."""
@@ -44,4 +46,3 @@ class BluetoothHandler:
         if self.interface:
             asyncio.run(self.interface.close())
             self.interface = None
-

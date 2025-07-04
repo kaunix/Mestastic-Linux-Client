@@ -4,7 +4,9 @@ Advanced Settings Window
 Provides access to radio transmission settings (power, interval, modem config).
 """
 
+
 from PyQt6 import QtWidgets
+
 
 class AdvancedSettingsWindow(QtWidgets.QWidget):
     """Window for advanced radio settings."""
@@ -25,4 +27,3 @@ class AdvancedSettingsWindow(QtWidgets.QWidget):
         layout.addRow("TX Power (dBm):", self.tx_power)
         layout.addRow("Broadcast Interval (s):", self.broadcast_interval)
         self.setLayout(layout)
-

@@ -5,6 +5,7 @@ A full-featured Linux desktop client for Meshtastic radios.
 Built with ❤️ by [KAUNIX].
 
 ## Features
+
 - Bluetooth scan and connect
 - Chat messaging with timestamps
 - Per-channel and per-message AES encryption
@@ -15,22 +16,36 @@ Built with ❤️ by [KAUNIX].
 - Chat export
 
 ## Installation
+
 ```bash
 sudo apt install python3-pip
 pip3 install -r requirements.txt
 python3 main.py
+```
 
- # Screenshots
+## Screenshots
 
-## Main Chat Window
+### Main Chat Window
+
 ![Main Chat](screenshots/main_chat_window.png)
 
-## Mesh Map
+### Mesh Map
+
 ![Mesh Map](screenshots/mesh_map.png)
 
-## Settings Panel
+### Settings Panel
+
 ![Settings](screenshots/settings_panel.png)
 
-## Node Info Window
+### Node Info Window
+
 ![Node Info](screenshots/node_info_window.png)
 
+## Packaging
+
+Run `./build_packages.sh` to create `.deb` and `.rpm` packages for release.
+
+## Contributing
+
+See [AGENTS.md](AGENTS.md) for required tests and packaging steps
+before submitting pull requests.

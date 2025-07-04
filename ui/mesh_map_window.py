@@ -4,7 +4,9 @@ Mesh Map Window
 Visualizes the connected Meshtastic mesh network topology.
 """
 
+
 from PyQt6 import QtWidgets
+
 
 class MeshMapWindow(QtWidgets.QWidget):
     """Window displaying mesh network map."""
@@ -21,4 +23,3 @@ class MeshMapWindow(QtWidgets.QWidget):
         self.map_canvas = QtWidgets.QLabel("Mesh Map Visualization Here (WIP)")
         layout.addWidget(self.map_canvas)
         self.setLayout(layout)
-

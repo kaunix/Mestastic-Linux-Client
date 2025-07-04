@@ -4,7 +4,9 @@ Node Info Window
 Displays information about the connected Meshtastic device.
 """
 
+
 from PyQt6 import QtWidgets
+
 
 class NodeInfoWindow(QtWidgets.QWidget):
     """Window showing node firmware, hardware info."""
@@ -23,4 +25,3 @@ class NodeInfoWindow(QtWidgets.QWidget):
         layout.addRow("Firmware Version:", self.firmware_label)
         layout.addRow("Hardware Model:", self.hardware_label)
         self.setLayout(layout)
-

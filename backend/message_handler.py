@@ -4,8 +4,10 @@ Message Handler
 Handles sending and receiving chat messages through Meshtastic.
 """
 
+
 import asyncio
 from threading import Thread
+
 
 class MessageHandler:
     """Handles sending and receiving text messages."""
@@ -49,4 +51,3 @@ class MessageHandler:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         loop.run_forever()
-

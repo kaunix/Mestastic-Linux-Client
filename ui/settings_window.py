@@ -4,7 +4,9 @@ Settings Window
 Provides an interface for user-configurable settings.
 """
 
+
 from PyQt6 import QtWidgets
+
 
 class SettingsWindow(QtWidgets.QWidget):
     """Window for application settings."""
@@ -21,4 +23,3 @@ class SettingsWindow(QtWidgets.QWidget):
         self.dark_mode_toggle = QtWidgets.QCheckBox("Enable Dark Mode")
         layout.addWidget(self.dark_mode_toggle)
         self.setLayout(layout)
-
